@@ -1,0 +1,78 @@
+
+.formuser-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color:#0003;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: transform .4s ease;
+}
+
+.close-form {
+    transform: scale(0);
+}
+
+
+.formuser{
+    width:100%;
+    max-width: 350px;
+    padding: 1.5em 1.5em 2.5em;
+    border-radius:0.7em;
+    background-color: #fff;
+    position: relative;
+}
+
+.formuser__title{
+    text-align: center;
+    margin-bottom:0.5em;
+    font-weight: 500;
+}
+
+
+.formuser__close{
+    position: absolute;
+    font-size: 1.2rem;
+    top: 1em;
+    right:1.5em;
+    cursor: pointer;
+}
+
+.formuser__group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    margin-bottom: 0.8em;
+}
+
+.formuser__label{
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-left: 1em;
+}
+
+.formuser__input{
+    padding: 0.4em 0.8em;
+    border-radius: 0.5em;
+    border: 0.1em solid #aaa;
+}
+
+.formuser__btn{
+    width:100%;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    background-color: rgb(22,110,218);
+    color: #fff;
+    border-radius: 0.5em;
+    margin-top:1em
+}
+
+.formuser__btn:hover{
+    filter:brightness()
+}

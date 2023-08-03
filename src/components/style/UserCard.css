@@ -1,0 +1,113 @@
+
+.card-user{
+    display: flex;
+    padding: 3em;
+    gap: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.5;
+    overflow: hidden;
+}
+
+.carduser-container{
+    max-width: 400px;
+    min-height: 290px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #bdbdbd;
+    border-radius:0.8em;
+    padding: 0.5em;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.3);
+    overflow: hidden;
+    animation:slide both 1s;   
+}
+
+
+
+.carduser__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 80px;
+    animation:slide both 1.5s 0.5s;
+}
+
+.carduser__line{
+    border-color: #eee3;
+}
+
+.carduser__list{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    animation:slide both 2s 0.8s
+}
+
+.carduser__item{
+    display: flex;
+    flex-direction: column
+}
+
+.carduser__label{
+    text-transform: uppercase;
+    color: #ccc;
+    font-weight: 700;
+}
+.carduser__text{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: #333;
+    font-weight: 600;
+}
+
+.carduser__footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.7em;
+    animation:slide both 2s 1.2s
+}
+
+.btn__usercard{
+    padding: 0.8em;
+    border-radius:0.5em;
+    margin-top: 0.5em;
+}
+
+.btn__usercard:first-child {
+    background-color: #df4c6c;
+    border: 1px solid #bc3e77;
+    color: #fff;
+    transition: .5s
+}
+
+.btn__usercard:last-child {
+    border: 1px solid #bdbdbd;
+    color: #bdbdbd;
+    background-color: #fcfcfc;
+}
+
+.btn__usercard .bx{
+    font-size:1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__usercard:first-child:hover{
+    background-color: #e11fda;
+    transition: .5s;
+}
+
+@keyframes slide {
+    0% {
+       opacity: 0;
+       transform: translateY(20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ }
